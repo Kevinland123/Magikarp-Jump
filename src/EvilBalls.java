@@ -5,7 +5,6 @@ public class EvilBalls {
 	public double x;
 	public double y = 0;
 	private double size;
-	public double vy = Math.random() * 5 + 1;
 
 	public EvilBalls(double x, double size) {
 		this.x = x;
@@ -13,16 +12,11 @@ public class EvilBalls {
 	}
 
 	public void draw(GraphicsContext gc) {
-		gc.drawImage(img, x, y, size, size);
+		//gc.drawImage(img, x, y, size, size);
 	}
 
 	public void move(double w, double h) {
-		y = y + vy;
-
-		if (y > h) {
-			y = 0;
-			x = Math.random() * w;
-		}
+		
 	}
 /*
 	public boolean didHit(Paddle s) {
@@ -61,13 +55,5 @@ public class EvilBalls {
 
 	public void setsize(double newsize) {
 		size = newsize;
-	}
-
-	public double getvy() {
-		return vy;
-	}
-
-	public void setvy(double newvy) {
-		vy = newvy;
 	}
 }
