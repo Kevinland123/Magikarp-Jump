@@ -6,7 +6,6 @@ public class EvilBalls {
 	public double y = 0;
 	private double size;
 	public double vy = Math.random() * 5 + 1;
-	private Image img = new Image("devil.png");
 
 	public EvilBalls(double x, double size) {
 		this.x = x;
@@ -25,7 +24,7 @@ public class EvilBalls {
 			x = Math.random() * w;
 		}
 	}
-
+/*
 	public boolean didHit(Paddle s) {
 		double sx = s.getX() + (s.getWidth() / 2);
 		double sy = s.getY() + (s.getHeight() / 2);
@@ -39,7 +38,7 @@ public class EvilBalls {
 		}
 		return false;
 	}
-
+*/
 	public double getx() {
 		return x;
 	}
